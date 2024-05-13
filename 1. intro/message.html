@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEE MAGIC</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        #message{
+            position: absolute;
+            top: 5%;
+            left: 40%;
+            width: 300px;
+            height: 80px;
+            background-color: rgb(11, 177, 11);
+            color: aliceblue;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 1px 4px 10px 1px gray;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .btn:active{
+            transform: scale(0.9);
+        }
+        h1{
+            font-size: 20px;
+        }
+        .btn{
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn" onclick="message()">
+        click me to see magic
+    </div>
+    <div id="message">
+        <h1>You've clicked A button</h1>
+    </div>
+    <script>
+        function message(){
+            var messageElement = document.getElementById("message");
+            messageElement.style.display = "flex";
+            setTimeout(function(){
+                messageElement.style.opacity = "0";
+                setTimeout(function(){
+                    messageElement.style.display = "none";
+                    messageElement.style.opacity = "1"; 
+                }, 500); 
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

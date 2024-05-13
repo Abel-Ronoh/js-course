@@ -1,0 +1,11 @@
+** OUTPUTS **
+- 1. Using The Console
+By using the 'console.log()' function, we can write into the browser's developer console.
+
+- 2. Using alert() function
+The alert function displays a dialog box with the output data on it.
+
+- 3. Writing to HTML Elements
+innerHTML function displays texton a selected HTML element.
+
+- 4
