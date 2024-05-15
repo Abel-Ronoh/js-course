@@ -1,0 +1,14 @@
+**VARIABLES**
+
+-> variables are like containers that hold data.
+-> These containers hold different data types including numbers and strings.
+
+** WAYS OF DECLARING VARIABLES **
+- 1. Automatically assigning a variable name
+- 2. Using var keyword
+- 3. Using let keyword
+- 4. using const keyword
+
+
+*****
+Always use const if the value should not be changed

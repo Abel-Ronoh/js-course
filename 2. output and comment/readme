@@ -8,4 +8,5 @@ The alert function displays a dialog box with the output data on it.
 - 3. Writing to HTML Elements
 innerHTML function displays texton a selected HTML element.
 
-- 4
+- 4. writing to the browser window using document.write() function
+document.write() function writes content to the body of the page

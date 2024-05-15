@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing DOM Elements</title>
+    <style>
+        .box{
+            background-color: red;
+        }
+        .containers{
+            border: 3px solid blue;
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="containers"></div>
+    <div class=""></div>
+    <!-- <div id="myDiv">Hello, World!</div>
+    <p class="paragraph">This is a paragraph.</p>
+    <p class="paragraph">Another paragraph.</p>
+    <p name="name">Another paragraph.</p>
+    <p name="name">third paragraph.</p> -->
+
+    <script>
+        var firstName = "John"
+        var num = 5
+        
+
+
+
+        var divElement = document.getElementById("myDiv");
+        console.log(divElement.textContent); 
+
+        var paragraphElements = document.getElementsByClassName("paragraph");
+        console.log(paragraphElements.length); 
+
+        var pElements = document.getElementsByTagName("p");
+        console.log(pElements.length); 
+
+        var firstParagraph = document.querySelector(".paragraph");
+        console.log(firstParagraph.textContent); 
+
+        var allParagraphs = document.querySelectorAll(".paragraph");
+        allParagraphs.forEach(function(paragraph) {
+            console.log(paragraph.textContent);
+        });
+
+        var namedElements = document.getElementsByName("name");
+        console.log(namedElements.textContent);
+    </script>
+</body>
+</html>
