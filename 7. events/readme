@@ -1,0 +1,20 @@
+Events are actions or occurrences that happen in the browser, such as user interactions or browser state changes.
+Examples: clicking a button, hovering over an element, loading a webpage, submitting a form.
+Common Events:
+
+Mouse Events: click, dblclick, mouseover, mouseout, mousedown, mouseup
+Keyboard Events: keydown, keyup, keypress
+Form Events: submit, change, focus, blur
+Window Events: load, resize, scroll
+Lesson 2: Basic Event Handling
+
+** WAYS OF HANDLING EVENTS **
+- 1. Inline Event Handling
+- 2. Javascript event listeners
+
+** Properties and Methods: **
+
+type: The type of event (e.g., click, mouseover).
+target: The element that triggered the event.
+preventDefault(): Prevents the default action of the event.
+stopPropagation(): Stops the event from bubbling up the DOM tree.

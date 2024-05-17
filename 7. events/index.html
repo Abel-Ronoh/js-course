@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="num1" type="number" />
+    <input id="num2" type="number" />
+    <button id="sumbtn">Sum</button>
+    <h1 id="answer"></h1>
+
+    <script>
+        const num1 = document.getElementById("num1");
+        const num2 = document.getElementById("num2");
+        const sumbtn = document.getElementById("sumbtn");
+
+        sumbtn.addEventListener("click", function() {
+            const number1 = parseFloat(num1.value);
+            const number2 = parseFloat(num2.value);
+            const sum = number1 + number2;
+            const answer = document.getElementById("answer");
+            answer.innerHTML = sum;
+        });
+    </script>
+</body>
+</html>
