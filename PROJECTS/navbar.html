@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #menu{
+            width: 50px;
+            /* background-color: black; */
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 10px;
+            z-index: 4;
+        }
+        #menu div{
+            width: 80%;
+            height: 2px;
+            background-color: white;
+            margin: 5px;
+        }
+        #menuList{
+            color: aliceblue;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 40px;
+            /* border-radius: 20px; */
+            background-color: blue;
+            height: 100%;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="menuList">
+        <h1>Home</h1>
+        <h1>About us</h1>
+        <h1>Contact us</h1>
+        <h1>Help</h1>
+    </div>
+
+    <script>
+       
+    </script>
+</body>
+</html>

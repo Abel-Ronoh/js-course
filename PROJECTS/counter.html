@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="count">0</h1>
+    <button id="increment">INCREMENT</button>
+    <button id="decrement">DECREMENT</button>
+    <button id="reset">RESET</button>
+
+    <script>
+        var count = document.getElementById("count")
+        var increment = document.getElementById("increment")
+        var decrement = document.getElementById("decrement")
+        var reset = document.getElementById("reset")
+        var val = 0
+         increment.addEventListener("click", function(){
+            val += 1
+            count.innerHTML = val
+         })
+
+         decrement.addEventListener("click", function(){
+            val -= 1
+            count.innerHTML = val
+         })
+
+         reset.addEventListener("click", function(){
+            val = 0
+            count.innerHTML = val
+         })
+    </script>
+</body>
+</html>
