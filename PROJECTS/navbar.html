@@ -53,7 +53,17 @@
     </div>
 
     <script>
-       
+       var menu = document.getElementById("menu")
+       var menuList = document.getElementById("menuList")
+
+       menu.addEventListener("click", function(){
+        if(menuList.style.right == '0' || menuList.style.right == ''){
+            menuList.style.right = '-500px'
+        }
+        else{
+            menuList.style.right = '0'
+        }
+       })
     </script>
 </body>
 </html>
