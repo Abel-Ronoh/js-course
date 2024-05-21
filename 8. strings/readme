@@ -1,0 +1,24 @@
+Strings are set of characters enclosed in quotes
+- Can be enclosed in double quotes or single quotes
+
+concatenate strings using (+)
+we use , \ , toescape characters
+
+** String Methods **
+-Getting string length
+-Retrieving a character
+-searching a character
+-> Slice method extracts a section of a string and returns it as a new string
+-> toUppercase method converts the string to to Uppercase
+-> tolowercase method converts the string to to lowercase
+-> concat method
+
+>> Arrays are like lists
+
+
+
+
+
+
+
+
