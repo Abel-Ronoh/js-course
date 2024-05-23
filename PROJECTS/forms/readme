@@ -1,0 +1,8 @@
+** FORM EVENTS 
+
+submit: Triggered when a form is submitted.
+reset: Triggered when a form is reset.
+focus: Triggered when an element gains focus.
+blur: Triggered when an element loses focus.
+change: Triggered when the value of an element changes (for input, select, textarea).
+input: Triggered when the value of an input element changes.
