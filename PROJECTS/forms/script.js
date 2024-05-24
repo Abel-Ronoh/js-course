@@ -6,18 +6,24 @@ document.getElementById("signUpForm").addEventListener("submit", function(event)
     var message = document.getElementById("message")
 
     console.log(password.length)
-    if(password.length < 8){
-        message.textContent = "Password is too short"
-        return;
-    }
+   
     if (username == "" || password == "" || email == ""){
         message.textContent = "All input fields need to be filled"
         return;
     }
     else{
+        if(password.length < 8){
+            message.textContent = "Password is too short"
+            return;
+        }
         message.style.color = 'green'
         message.textContent = "you have signed up successfuly"
-        return;
-    }
+    document.getElementById("signUpForm").reset()
 
-})
+        return;
+        
+    }
+    
+
+}
+)
